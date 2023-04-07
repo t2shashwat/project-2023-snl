@@ -19,15 +19,36 @@ Please, fill the following sections about your project.
 
 ### Dataset
 
-> Find a dataset (or multiple) that you will explore. Assess the quality of the data it contains and how much preprocessing / data-cleaning it will require before tackling visualization. We recommend using a standard dataset as this course is not about scraping nor data processing.
->
-> Hint: some good pointers for finding quality publicly available datasets ([Google dataset search](https://datasetsearch.research.google.com/), [Kaggle](https://www.kaggle.com/datasets), [OpenSwissData](https://opendata.swiss/en/), [SNAP](https://snap.stanford.edu/data/) and [FiveThirtyEight](https://data.fivethirtyeight.com/)), you could use also the DataSets proposed by the ENAC (see the Announcements section on Zulip).
+We plan to use datasets taken from the ourworldindata.org website. The data is often directly available in csv format,
+therefore easy to parse, and would provide us with all the information we would require. For example, the website has
+articles analyzing the greenhouse gas emissions of food products [1], transport [2], or the energy mix of individual
+countries [3]. Additionally, all the data is sourced from peer-reviewed conference papers and government reports. Please
+see the next section for the rationale behing the utilization of such datasets.
 
 ### Problematic
 
-> Frame the general topic of your visualization and the main axis that you want to develop.
-> - What am I trying to show with my visualization?
-> - Think of an overview for the project, your motivation, and the target audience.
+Human emissions of greenhouse gases, such as Carbone Dioxide (CO2), led to the warming of global surface temperatures by
+about 1.1°C since pre-industrial levels(1850-1900) [4]. Such an increase in temperature led to important changes in
+precipitation distribution and increased climate extremes such as more intense droughts, floods, or wildfires, resulting
+in increased pressure on natural ecosystems [4]. The species occupying such ecosystems and the humans relying on them
+are already negatively impacted by such a changing climate, with low-income countries at higher risk than high-income
+ones. Indeed, as underlined in the IPCC reports [4], around 3.5 billion people live in contexts that are highly
+vulnerable to climate change, exposing people to food insecurity and water insecurity. The situation is particularly
+concerning since global greenhouse gas emissions have not yet peaked [3].
+
+In this setting, naturally, one is tempted to decrease its emissions and impact on the planet. However, while plenty of
+reports and studies analyze independent life choices and habits, it is hard to get a general overview of the impacts of
+one's own behavior. Indeed, studies investigated the greenhouse gas emissions per kilograms of food products, different
+transport types, energy consumption, or all at once with the IPCC reports, but, the information is either scattered or
+included in very long documents. Additionally, while it is helpful to read any such analysis, it is hard without
+additional work to have a clear picture of one's own impact. With this project, we plan to provide a visualizer for the
+distribution of one's own greenhouse emissions using the data from a set of studies available online. We also plan to
+provide, within the same tool, visualizations of average greenhouse gas emissions per country using the same set of
+studies. Then, anyone curious about the impact of their lifestyle on the planet could use our tool to assess where
+savings could occur and how far one is from others in the same/other countries. In a context where information is often
+viewed with a political or economic lens, we believe a data-based visualizer would only be beneficial. With such a tool,
+we would be able to answer questions such as: "how far am I from the median of the country?", and give detailed
+distribution and visualisation of where the carbon footprint of one lies.
 
 ### Exploratory Data Analysis
 
@@ -36,11 +57,23 @@ Please, fill the following sections about your project.
 
 ### Related work
 
+While some visualization tools already exist online, they are generally confined to a single metric, are overly generic,
+or lack the ability to personalize the visualization. We take inspiration from the ourworldindata website, since it
+already has some nice visualisation of the dataset we want to investigate. However, they only present averages per
+contry, and not a personalized visualisation. Some other websites such as the carbon footprint exist, but they lack the
+any visualisation capabilities, either personalized or generalized. Our goal is to provide a global visualization,
+including both averages and personalized information, in a single point of reference.
 
-> - What others have already done with the data?
-> - Why is your approach original?
-> - What source of inspiration do you take? Visualizations that you found on other websites or magazines (might be unrelated to your data).
-> - In case you are using a dataset that you have already explored in another context (ML or ADA course, semester project...), you are required to share the report of that work to outline the differences with the submission for this class.
+[1] Hannah Ritchie, Pablo Rosado and Max Roser (2022) - "Environmental Impacts of Food Production". Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/environmental-impacts-of-food' [Online Resource]
+[2] Hannah Ritchie, Max Roser and Pablo Rosado (2022) - "Energy". Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/energy' [Online Resource]
+[3] Hannah Ritchie, Max Roser and Pablo Rosado (2022) - "Transport". Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/transport' [Online Resource]
+[4] IPCC, 2022: Climate Change 2022: Impacts, Adaptation, and Vulnerability. Contribution of Working Group II to the
+Sixth Assessment Report of the Intergovernmental Panel on Climate Change [H.-O. Pörtner, D.C. Roberts, M. Tignor, E.S.
+Poloczanska, K. Mintenbeck, A. Alegría, M. Craig, S. Langsdorf, S. Löschke, V. Möller, A. Okem, B. Rama (eds.)].
+Cambridge University Press. Cambridge University Press, Cambridge, UK and New York, NY, USA, 3056 pp.,
+doi:10.1017/9781009325844.
+[5] Carbon Footprint Website (2022) https://www.carbonfootprint.com/calculator.aspx [Online Resource]
+
 
 ## Milestone 2 (7th May, 5pm)
 
