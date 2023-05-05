@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.0.0/d3.js"></script>
+    </head>
+    <body>
+        <button class="tablink" id="default" onclick="handleTab('Data')">Data Overview</button>
+        <button class="tablink" onclick="handleTab('Country')">Country Averages</button>
+        <button class="tablink" onclick="handleTab('Calculator')">Calculator</button>
+
+        <div id="Data" class="tabcontent">
+            <script type="text/javascript" src="chart.js"></script>
+        </div>
+
+        <div id="Country" class="tabcontent">
+            <script type="text/javascript" src="country.js"></script>
+        </div>
+
+        <div id="Calculator" class="tabcontent">
+            <script type="text/javascript" src="calculator.js"></script>
+        </div>
+
+        <script type="text/javascript" src="tabs.js"></script>
+        <script>
+         document.getElementById("default").click();
+        </script>
+    </body>
+</html>
