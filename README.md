@@ -3,7 +3,7 @@
 | Student's name | SCIPER |
 | -------------- | ------ |
 | Louis Coulon | 257285 |
-| Neelu Kalani | |
+| Neelu Kalani | 336452 |
 | Shashwat Shrivastava | 336301 |
 
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
@@ -82,8 +82,23 @@ doi:10.1017/9781009325844.
 
 
 ## Milestone 2 (7th May, 5pm)
-
 **10% of the final grade**
+
+### Sketches of the vizualiation
+
+
+### List the tools
+
+
+### Pieces to implement
+
+
+### List extra ideas
+
+
+### Basic skeleton of the visualization/widgets
+
+
 
 
 ## Milestone 3 (4th June, 5pm)
